@@ -75,6 +75,7 @@ section {
     width: 1020px;
     height: 100vh;
     padding-top: 8rem;
+    margin: auto;
 }
 
 .cowork {
@@ -95,4 +96,42 @@ section {
     border: solid #253a62 1px;
     padding: 10px;
     border-radius: 20px;
+}
+
+#services {
+    text-align: center;
+}
+
+#services .cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+}
+
+#services img{
+    width: 17rem;
+    height: 12rem;
+}
+
+#services p {
+    text-align: justify;
+}
+
+
+table {
+    margin: auto;
+    width: 90vw;
+}
+
+td {
+    padding: 1rem;
+}
+
+#contact > h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.profil{
+    width: 10rem;
 }
