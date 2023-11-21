@@ -1,0 +1,98 @@
+/* 
+pale-blue : #ebf3fa;
+marine-blue : #234179;
+dark-red: #af443f 
+dark-blue: #253a62
+*/
+
+* {
+    color: #253a62;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(./Images/blue-pale.svg);
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+span {
+    font-weight: lighter;
+}
+
+li {
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > a {
+    margin-left: 1rem;
+    height: 2rem;
+    transition: text-decoration 1s ease-in-out;
+}
+
+a {
+    transition: text-decoration 1s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+nav {
+    margin-right: 3rem;
+}
+
+nav > ul {
+    display: flex;
+}
+
+ul > li {
+    margin-left: 1rem;
+}
+
+section {
+    width: 1020px;
+    height: 100vh;
+    padding-top: 8rem;
+}
+
+.cowork {
+    width: 40rem;
+    height: 25rem;
+}
+
+#accueil {
+    display: flex;
+    margin: auto;
+}
+
+#accueil .left {
+    width: 600px;
+}
+
+.btn {
+    border: solid #253a62 1px;
+    padding: 10px;
+    border-radius: 20px;
+}
