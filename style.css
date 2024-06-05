@@ -5,11 +5,12 @@ body {
   background-color: #add8e6; /* Light blue background */
 }
 
+/************ Navigation bar ************/
+
 header {
-  background-color: #003366; /* Dark blue background */
   color: white;
-  padding: 10px 0;
 }
+
 nav {
   background-color: #003366; /* Dark blue background */
   color: white;
@@ -44,6 +45,8 @@ main {
   text-align: center;
   padding: 20px 0;
 }
+
+/************ Accueil ************/
 
 .intro {
   margin: 3rem;
@@ -83,6 +86,60 @@ main {
 .moi {
   margin-top: 20px;
 }
+
+/************ DOCUMENTATIONS ************/
+
+.buttons {
+  margin: 20px 0;
+}
+.buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.buttons .pdf-button {
+  background-color: #007bff;
+}
+.buttons .editable-button {
+  background-color: #00008b;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #333;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects a {
+  width: 200px;
+  height: 100px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 2px dashed white;
+}
+.projects .school-projects {
+  background-color: #b22222;
+}
+.projects .company-projects {
+  background-color: #1e90ff;
+}
+
+/* FOOTER */
 
 footer {
   margin-top: 20px;
