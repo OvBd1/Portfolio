@@ -1,57 +1,155 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Site portfolio</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+	</head>
+	<body>
+		<nav>
+			<h1>
+				<span class="material-symbols-outlined">fingerprint</span>
+        Mon Portfolio
+			</h1>
+      <img src="assets/burgerBlack.png" class="burger-menu">
+      <ul class="menu">
+        <li>y.bontrond@gmail.com 
+          <span class="material-symbols-outlined">call_made</span>
+          &nbsp;
+        </li>
+        <li id="dark-light-mode" onclick="changeDarkMode()">Dark Mode</li>
+      </ul>
+		</nav>
 
     <header>
-        <a class="logo" href="#">LOGO</a>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projets">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a class="btn signup" href="#">Signup</a></li>
-            </ul>
-        </nav>
+      <div class="header-left">
+        <small>
+          <span class="material-symbols-outlined">home_pin</span>
+          Maurepas, France
+        </small>
+        <h1>Bonjour,<br> je m'appelle Yanis Bontrond</h1>
+        <p>
+          Je suis actuellement étudiant en BTS SIO option SLAM (Solution Logicielle et Application Métier) à IPSSI SQY. 
+          Je suis passioné par l'informatique depuis mon plus jeune âge !
+        </p>
+
+        <div class="links">
+          <a href="">
+            Email
+            <span class="material-symbols-outlined">call_made</span>
+          </a>
+          <a href="https://www.linkedin.com/in/yanis-bontrond/">
+            LinkedIn
+            <span class="material-symbols-outlined">call_made</span>
+          </a>
+          <a href="">
+            Curriculum Vitae
+            <span class="material-symbols-outlined">call_made</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-right">
+        <img src="assets/moi.jpeg" alt="C'est moi ;)">
+      </div>
     </header>
 
-
-    <section id="accueil">
-        <div class="left">
-            <h1>Hey ! <span>Do you know</span><br> what we do ?</h1>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita sequi provident odio? Sit, vel nostrum
-                similique ex id recusandae, exercitationem perferendis aut quod obcaecati deserunt illo consectetur,
-                culpa nam totam!
-                Vel molestias distinctio</p>
-
-            <h2>Sounds awesome right ?</h2>
-
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, neque sint. Iste, a. Quod, laboriosam?
-                Iste perferendis, facilis cupiditate, voluptatibus aliquid ex mollitia dolores quos architecto illum
-                beatae amet tempore.</p>
-
-            <a class="btn" href="#">Get started</a>
-        </div>
-        <img class="cowork" src="./Images/cowork.webp" alt="">
+    <section class="about">
+      <h2>A propos de moi</h2>
+      <h3>Mon Parcours Scolaire et Professionnel</h3> 
+      <p>
+        Depuis mon parcours scolaire, j'ai toujours été passionné par les nouvelles technologies et l'informatique. J'ai débuté mon aventure académique en obtenant 
+        un baccalauréat général avec une spécialité en mathématiques et numérique et sciences informatiques (NSI). Ce cursus m'a permis de développer une solide 
+        base en logique mathématique et en programmation, des compétences essentielles pour la suite de mon parcours. Après le bac, j'ai poursuivi mes études en 
+        intégrant un BTS Services Informatiques aux Organisations (SIO) à l'IPSSI à Saint-Quentin-en-Yvelines. J'ai choisi l'option Solutions Logicielles et Applications 
+        Métiers (SLAM), qui se concentre sur la conception et le développement de solutions logicielles.
+      </p>
+      <h3>Veille Technologique : Le Cloud Gaming et l'Évolution de l'Encodage</h3>
+      <p>
+        Dans le cadre de ma formation, j'ai réalisé une veille technologique portant sur le cloud gaming et l'évolution de l'encodage. Le cloud gaming révolutionne 
+        le monde du jeu vidéo en permettant de jouer à des jeux gourmands en ressources directement en streaming, sans nécessiter de matériel puissant chez 
+        l'utilisateur. Cette technologie repose sur des serveurs distants qui exécutent les jeux et transmettent les images en temps réel aux joueurs. L'évolution de 
+        l'encodage vidéo joue un rôle crucial dans cette innovation. Les codecs modernes comme H.265 (HEVC) et AV1 permettent de compresser les vidéos de manière plus 
+        efficace tout en conservant une haute qualité d'image. Ces avancées réduisent la latence et améliorent l'expérience utilisateur en rendant le cloud gaming plus 
+        accessible et agréable.
+      </p>
+      <h3>Le BTS SIO et Ses Options</h3>
+      <p>
+        Le BTS SIO est une formation qui prépare aux métiers de l'informatique en entreprise. Il se divise en deux options principales :
+        <ul>
+          <li>SLAM (Solutions Logicielles et Applications Métiers) : Cette option forme aux métiers du développement et de la programmation. Les étudiants apprennent 
+            à concevoir, développer et maintenir des applications informatiques répondant aux besoins des entreprises. Ils maîtrisent divers langages de programmation 
+            et outils de développement.
+          </li>
+          <li>
+            SISR (Solutions d'Infrastructure, Systèmes et Réseaux) : Cette option se concentre sur la gestion des infrastructures réseaux et systèmes. Les étudiants 
+            acquièrent des compétences en administration de réseaux, sécurité informatique et gestion des systèmes d'exploitation.
+          </li>
+        </ul>
+      </p>
+      <h3 id="asso">Présentation de l'Association Container Sans Frontières</h3>
+      <p>
+        L'association Container Sans Frontières est une organisation dédiée à l'amélioration des conditions de vie dans les zones défavorisées en fournissant des 
+        solutions innovantes et durables. Leur mission inclut la mise à disposition de containers aménagés pour divers usages, allant de logements temporaires à des 
+        centres de santé mobiles.
+      </p>
+      <h3>Mes Réalisations et Compétences</h3>
+      <p>
+        Au cours de mon parcours, j'ai acquis des connaissances et des compétences solides dans plusieurs langages de programmation et technologies web, notamment HTML, 
+        CSS, JavaScript, PHP et SQL. J'ai mis ces compétences en pratique en réalisant plusieurs projets significatifs, dont la création d'un site vitrine et un système 
+        de gestion de stock pour l'association Container Sans Frontières. Ces projets m'ont permis de développer une expertise en développement web, gestion de bases de 
+        données et intégration de solutions logicielles adaptées aux besoins réels des utilisateurs. Grâce à ces expériences, j'ai pu non seulement approfondir mes 
+        compétences techniques mais aussi développer une compréhension des enjeux et des défis du développement de solutions informatiques dans un contexte associatif. 
+        Mon parcours illustre mon engagement et ma passion pour l'informatique et les technologies, ainsi que ma capacité à appliquer mes connaissances de manière concrète 
+        et utile.
+      </p>
+      <img src="assets/signature.svg" alt="signature" class="signature">
     </section>
 
-    <!-- <section id="services">Services</section>
+    <section class="projets">
+      <div class="card">
+        <div class="left">
+          <img src="assets/LordsOfBattle.png" alt="">
+        </div>
+        <div class="right">
+          <h1>Lords Of Battle</h1>
+          <p>Création d'un jeu de combat tour par tour à l'aide de JavaScript</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="left">
+          <img src="assets/noImage.png" alt="">
+        </div>
+        <div class="right">
+          <h1>Application E-Commerce</h1>
+          <p>Création d'un site de e-commerce à l'aide d'API fictive en PHP avec utilisation de dépendance (PHPMailer, dotenv)</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="left">
+          <img src="assets/noImage.png" alt="">
+        </div>
+        <div class="right">
+          <h1>Site Vitrine + Application Gestion</h1>
+          <p>
+            Création d'un site vitrine pour l'association Conatiner Sans Frontières <sup><a href="#asso">1</a></sup> et d'une application de gestion pour leur 
+            permettre de gérer les stocks qu'elle possède.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <section id="projets">Projets</section>
-
-    <section id="contact">Contact</section> -->
-
-    <!-- <footer>mon footer</footer> -->
-
-</body>
-
+    <footer>
+      <h3>
+        <span class="material-symbols-outlined">fingerprint</span>
+        Yanis Bontrond
+      </h3>
+      <p>&copy; Yanis Bontrond - 2024</p>
+    </footer>
+	</body>
 </html>
