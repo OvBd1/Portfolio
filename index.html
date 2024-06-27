@@ -3,144 +3,69 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Site portfolio</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="icon" type="image/x-icon" href="assets/LogoBy.png" />
 		<link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+		<script src="script.js" defer></script>
+		<title>Site portfolio</title>
 	</head>
 
 	<body>
 		<nav>
 			<h1><span class="material-symbols-outlined">fingerprint</span><a href="index.html">Mon Portfolio</a></h1>
-      <div class="nav-links">
-        <ul class="menu">
-          <li><a href="veille.html">Veilles technologiques</a></li>
-          <li><a href="mailto:y.bontrond@gmail.com">y.bontrond@gmail.com</a></li>
-          <li id="dark-light-mode" onclick="changeDarkMode()">Dark Mode</li>
-        </ul>
-      </div>
-      <img src="assets/burgerBlack.png" class="burger-menu">
+			<div class="nav-links">
+				<ul class="menu">
+					<li><a href="etude.html">A propos</a></li>
+					<li><a href="projet.html">Projets</a></li>
+					<li><a href="veille.html">Veilles technologiques</a></li>
+					<li><a href="mailto:y.bontrond@gmail.com" target="_blank">y.bontrond@gmail.com</a></li>
+					<li id="dark-light-mode" onclick="changeDarkMode()">Dark Mode</li>
+				</ul>
+			</div>
+			<img src="assets/burgerBlack.png" class="burger-menu" />
 		</nav>
 
-    <div class="container">
-      <header>
-        <div class="header-left">
-          <small><span class="material-symbols-outlined">home_pin</span><a href="https://www.google.fr/maps/place/78310+Maurepas/@48.7712025,1.9043775,14z/">Maurepas, France</a>
-          </small>
-          <h1>Bonjour,<br> je m'appelle Yanis Bontrond</h1>
-          <p>
-            Je suis actuellement étudiant en BTS SIO option SLAM (Solution Logicielle et Application Métier) à IPSSI SQY. 
-            Je suis passioné par l'informatique depuis mon plus jeune âge !
-          </p>
-  
-          <div class="links">
-            <a href="mailto:y.bontrond@gmail.com">
-              Email
-              <span class="material-symbols-outlined">call_made</span>
-            </a>
-            <a href="https://www.linkedin.com/in/yanis-bontrond/">
-              LinkedIn
-              <span class="material-symbols-outlined">call_made</span>
-            </a>
-            <a href="assets/CV-alternance-yanis-bontrond.pdf">
-              Curriculum Vitae
-              <span class="material-symbols-outlined">call_made</span>
-            </a>
-          </div>
-        </div>
-        <div class="header-right">
-          <img src="assets/moi.jpeg" alt="C'est moi ;)">
-        </div>
-      </header>
-  
-      <section class="about">
-        <h2>A propos de moi</h2>
-        <br><br><br>
-        <h3>Mon Parcours Scolaire et Professionnel</h3> 
-        <p>
-          Depuis mon parcours scolaire, j'ai toujours été passionné par les nouvelles technologies et l'informatique. J'ai débuté mon aventure académique en obtenant 
-          un baccalauréat général avec les spécialités mathématiques et numérique et sciences informatiques (NSI). Ce cursus m'a permis de développer une
-          base en programmation, des compétences essentielles pour la suite de mon parcours. Après le bac, j'ai poursuivi mes études en 
-          intégrant un BTS Services Informatiques aux Organisations (SIO) à l'IPSSI à Saint-Quentin-en-Yvelines. J'ai choisi l'option Solutions Logicielles et Applications 
-          Métiers (SLAM), qui se concentre sur la conception et le développement de solutions logicielles.
-        </p>
-        <br><br><br>
-        <h3>Le BTS SIO et Ses Options</h3>
-        <p>
-          Le BTS SIO est une formation qui prépare aux métiers de l'informatique en entreprise. Il se divise en deux options principales :
-          <br><br>
-          - SLAM (Solutions Logicielles et Applications Métiers) : Cette option forme aux métiers du développement et de la programmation. Les étudiants apprennent 
-            à concevoir, développer et maintenir des applications informatiques répondant aux besoins des entreprises. Ils maîtrisent divers langages de programmation 
-            et outils de développement.
-          <br><br>
-          - SISR (Solutions d'Infrastructure, Systèmes et Réseaux) : Cette option se concentre sur la gestion des infrastructures réseaux et systèmes. Les étudiants 
-            acquièrent des compétences en administration de réseaux, sécurité informatique et gestion des systèmes d'exploitation.
-        </p>
-        <br><br><br>
-        <h3 id="asso">Présentation de l'Association Container Sans Frontières</h3>
-        <p>
-          L'association Container Sans Frontières<sup><a href="https://www.containersansfrontieres.org">1</a></sup> est une organisation dédiée à l'amélioration des conditions de vie dans les zones défavorisées en fournissant des 
-          solutions innovantes et durables. Leur mission inclut la mise à disposition de containers aménagés pour divers usages, allant de logements temporaires à des 
-          centres de santé mobiles.
-        </p>
-        <br><br><br>
-        <h3>Mes Réalisations et Compétences</h3>
-        <p>
-          Au cours de mon parcours, j'ai acquis des connaissances et des compétences solides dans plusieurs langages de programmation et technologies web, notamment HTML, 
-          CSS, JavaScript, PHP et SQL. J'ai mis ces compétences en pratique en réalisant plusieurs projets significatifs, dont la création d'un site vitrine et un système 
-          de gestion de stock pour l'association Container Sans Frontières. Ces projets m'ont permis de développer une expertise en développement web, gestion de bases de 
-          données et intégration de solutions logicielles adaptées aux besoins réels des utilisateurs. Grâce à ces expériences, j'ai pu non seulement approfondir mes 
-          compétences techniques mais aussi développer une compréhension des enjeux et des défis du développement de solutions informatiques dans un contexte associatif. 
-          Mon parcours illustre mon engagement et ma passion pour l'informatique et les technologies, ainsi que ma capacité à appliquer mes connaissances de manière concrète 
-          et utile.
-        </p>
-        <img src="assets/signature.svg" alt="signature" class="signature">
-      </section>
-  
-      <section class="projets">
-        <div class="card">
-          <div class="left">
-            <img src="assets/LordsOfBattle.png" alt="">
-          </div>
-          <div class="right">
-            <h1>Lords Of Battle</h1>
-            <p>Création d'un jeu de combat tour par tour à l'aide de JavaScript</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="left">
-            <img src="assets/noImage.png" alt="">
-          </div>
-          <div class="right">
-            <h1>Application E-Commerce</h1>
-            <p>Création d'un site de e-commerce à l'aide d'API fictive en PHP avec utilisation de dépendance (PHPMailer, dotenv)</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="left">
-            <img src="assets/noImage.png" alt="">
-          </div>
-          <div class="right">
-            <h1>Site Vitrine + Application Gestion</h1>
-            <p>
-              Création d'un site vitrine pour l'association Conatiner Sans Frontières <sup><a href="#asso">1</a></sup> et d'une application de gestion pour leur 
-              permettre de gérer les stocks qu'elle possède.
-            </p>
-          </div>
-        </div>
-      </section>
-  
-      <footer>
-        <h3>
-          <span class="material-symbols-outlined">fingerprint</span>
-          Yanis Bontrond
-        </h3>
-        <p>&copy; Yanis Bontrond - 2024</p>
-      </footer>
-  
-    </div>
+		<div class="container accueil">
+			<header>
+				<div class="header-left">
+					<small>
+            <span class="material-symbols-outlined">home_pin</span>
+            <a href="https://www.google.fr/maps/place/78310+Maurepas/@48.7712025,1.9043775,14z/" target="_blank">Maurepas, France</a>
+					</small>
+					<h1> Bonjour,<br> je m'appelle Yanis Bontrond</h1>
+					<p>Je suis actuellement étudiant en BTS SIO option SLAM (Solution Logicielle et Application Métier) à IPSSI SQY.</p>
+
+					<div class="links">
+						<a href="mailto:y.bontrond@gmail.com" target="_blank">
+							Email
+							<span class="material-symbols-outlined">call_made</span>
+						</a>
+						<a href="https://www.linkedin.com/in/yanis-bontrond/" target="_blank">
+							LinkedIn
+							<span class="material-symbols-outlined">call_made</span>
+						</a>
+						<a href="assets/CV-alternance-yanis-bontrond.pdf" target="_blank">
+							Cirriculum Vitae
+							<span class="material-symbols-outlined">call_made</span>
+						</a>
+						<a href="https://github.com/OvBd1" target="_blank">
+							GitHub
+							<span class="material-symbols-outlined">call_made</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-right">
+					<img src="assets/moi.jpeg" alt="C'est moi ;)" />
+				</div>
+			</header>
+			<footer>
+				<h3>
+					<span class="material-symbols-outlined">fingerprint</span>Yanis
+					Bontrond
+				</h3>
+				<p>&copy; Yanis Bontrond - 2024</p>
+			</footer>
+		</div>
 	</body>
 </html>

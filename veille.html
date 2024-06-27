@@ -2,18 +2,13 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Site portfolio</title>
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-		/>
+    <link rel="icon" type="image/x-icon" href="assets/LogoBy.png">
 		<link rel="stylesheet" href="style.css" />
 		<script src="script.js" defer></script>
+		<title>Site portfolio</title>
 	</head>
 
 	<body>
@@ -21,10 +16,10 @@
 			<h1><span class="material-symbols-outlined">fingerprint</span><a href="index.html">Mon Portfolio</a></h1>
 			<div class="nav-links">
 				<ul class="menu">
-					<li><a href="veille.html">Veilles technologiques</a></li>
-					<li>
-						<a href="mailto:y.bontrond@gmail.com">y.bontrond@gmail.com</a>
-					</li>
+          <li><a href="etude.html">A propos</a></li>
+          <li><a href="projet.html">Projets</a></li>
+					<li><a href="veille.html" class="active">Veilles technologiques</a></li>
+					<li><a href="mailto:y.bontrond@gmail.com">y.bontrond@gmail.com</a></li>
 					<li id="dark-light-mode" onclick="changeDarkMode()">Dark Mode</li>
 				</ul>
 			</div>
@@ -33,7 +28,7 @@
 
 		<div class="container">
       <div class="veille">
-        <h1 class="title-veille">VEILLES TECHNOLOGIQUE</h1>
+        <h1 class="title">Veilles technologiques</h1>
 
         <h2>Le Cloud Gaming et l'Évolution de l'Encodage</h2>
   
@@ -92,8 +87,17 @@
           transformant la distribution, la consommation et la monétisation des
           jeux.
         </p>
-  
+        <div class="links">
+          <a href="assets/Le cloud gaming.pptx" target="_blank">
+            PowerPoint
+            <span class="material-symbols-outlined">call_made</span>
+          </a>
+        </div>  
       </div>
+      <footer>
+        <h3><span class="material-symbols-outlined">fingerprint</span>Yanis Bontrond</h3>
+        <p>&copy; Yanis Bontrond - 2024</p>
+      </footer>
 		</div>
 	</body>
 </html>

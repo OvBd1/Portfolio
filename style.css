@@ -5,6 +5,22 @@
   --text-color: black;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,12 +38,16 @@ body {
   margin: 3% 15%;
 }
 
+.accueil {
+  margin: 3% 15% 0 15%;
+}
+
 p {
   line-height: 25px;
 }
 
 nav {
-  margin: 3% 15%;
+  margin: 3% 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,6 +89,10 @@ nav ul li span {
   right: -28px;
 }
 
+.active {
+  color: #777372;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -102,13 +126,13 @@ header .header-left p {
   text-align: justify;
 }
 
-header .header-left .links {
+.links {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
-header .header-left .links a {
+.links a {
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -118,7 +142,7 @@ header .header-left .links a {
   cursor: pointer;
 }
 
-header .header-left .links a span {
+.links a span {
   position: absolute;
   top: -5px;
   right: -28px;
@@ -163,24 +187,25 @@ header .header-right img {
   font-weight: 300;
 }
 
-.about .signature {
+.signature {
+  margin-top: 20px;
   width: 30%;
   background-color: #efe7e5;
 }
 
-.veille .title-veille {
+.title {
   text-align: center;
   margin: 50px 0;
   font-size: 30px;
   font-weight: bold;
 }
-.veille h2 {
+h2 {
   font-size: 30px;
   font-weight: 500;  
   margin: 25px 0;
 }
 
-.veille h3 {
+h3 {
   font-size: 25px;
   font-weight: 400;  
   margin: 25px 0;
@@ -203,10 +228,6 @@ header .header-right img {
 .projets .card .left img {
   height: 200px;
   width: 400px;
-}
-
-footer {
-  margin-top: 100px;
 }
 
 footer p {
