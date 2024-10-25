@@ -18,7 +18,8 @@ function changeDarkMode(colorMode) {
     document.getElementById("dark-light-mode").innerText = "Light Mode";
   }
 }
-window.onload => changeDarkMode(localStorage.getItem("colorMode"))
+
+window.onload(changeDarkMode(localStorage.getItem("colorMode")));
 
 menuBurger.addEventListener("click", () => {
   navLinks.classList.toggle('mobile-menu');
