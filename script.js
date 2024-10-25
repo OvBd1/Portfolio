@@ -2,7 +2,8 @@ const menuBurger = document.querySelector(".burger-menu");
 const navLinks = document.querySelector(".nav-links");
 let darkMode = false;
 
-function changeDarkMode() {
+function changeDarkMode(colorMode) {
+  localStorage.setItem("colorMode", true);
   if (darkMode) {
     // Light mode
     darkMode = false;
@@ -19,6 +20,7 @@ function changeDarkMode() {
     document.getElementById("dark-light-mode").innerText = "Light Mode";
   }
 }
+window.onload => changeDarkMode(localStorage.getItem("colorMode"))
 
 menuBurger.addEventListener("click", () => {
   navLinks.classList.toggle('mobile-menu');
