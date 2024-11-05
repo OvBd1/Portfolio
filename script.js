@@ -5,8 +5,6 @@ const toggleBtn = document.getElementById("toggle-btn");
 let darkMode = localStorage.getItem("dark-mode");
 
 function enableDarkMode() {
-  console.log(toggleBtn)
-  console.log('afa')
   document.documentElement.style.setProperty("--text-color", "white");
   document.documentElement.style.setProperty("--background-color", "#333");
   menuBurger.src = 'assets/burgerWhite.png';
@@ -16,8 +14,6 @@ function enableDarkMode() {
 };
  
 function disableDarkMode() {
-  console.log(toggleBtn)
-  console.log('afa')
   document.documentElement.style.setProperty("--text-color", "black");
   document.documentElement.style.setProperty("--background-color", "#efe7e5");
   menuBurger.src = 'assets/burgerBlack.png';
@@ -39,7 +35,6 @@ menuBurger.addEventListener("click", () => {
 });
 
 toggleBtn.addEventListener("click", () => {
-  console.log('valide')
   darkMode = localStorage.getItem("dark-mode");
   
   if (darkMode === "disabled") {
