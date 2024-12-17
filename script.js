@@ -8,7 +8,7 @@ function enableDarkMode() {
   document.documentElement.style.setProperty("--text-color", "white");
   document.documentElement.style.setProperty("--background-color", "#333");
   menuBurger.src = 'assets/burgerWhite.png';
-  toggleBtn.innerText = "Light Mode";  
+  // toggleBtn.innerText = "Light Mode";  
   localStorage.setItem("dark-mode", "enabled");
 };
  
@@ -16,7 +16,7 @@ function disableDarkMode() {
   document.documentElement.style.setProperty("--text-color", "black");
   document.documentElement.style.setProperty("--background-color", "#efe7e5");
   menuBurger.src = 'assets/burgerBlack.png';
-  toggleBtn.innerText = "Dark Mode";
+  // toggleBtn.innerText = "Darxk Mode";
   localStorage.setItem("dark-mode", "disabled");
 };
 
